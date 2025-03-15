@@ -1,0 +1,18 @@
+### ✅ Send Notification
+POST http://localhost:5004/api/notifications/send
+Content-Type: application/json
+
+{
+  "userId": "1234522",
+  "message": "Your transaction was successful",
+  "status": "sent"
+}
+
+### ✅ Fetch Notifications
+GET http://localhost:5004/api/notifications
+
+### ✅ Mark as Read
+PATCH http://localhost:5004/api/notifications/NOTIFICATION_ID
+
+### ✅ Delete Notification
+DELETE http://localhost:5004/api/notifications/NOTIFICATION_ID

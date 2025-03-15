@@ -1,0 +1,30 @@
+### Deposit Funds
+POST http://localhost:5002/api/transactions/deposit
+Content-Type: application/json
+
+{
+  "userId": "67d541a50b4b60440d48550f",
+  "amount": 1000
+}
+
+### Withdraw Funds
+POST http://localhost:5002/api/transactions/withdraw
+Content-Type: application/json
+
+{
+  "userId": "67d541a50b4b60440d48550f",
+  "amount": 300
+}
+
+### Transfer Funds
+POST http://localhost:5002/api/transactions/transfer
+Content-Type: application/json
+
+{
+  "userId": "67d541a50b4b60440d48550f",
+  "recipientId": "67d44cb62c6122dd0ac9dc5d",
+  "amount": 500
+}
+
+### Get User Transactions
+GET http://localhost:5002/api/transactions/67d541a50b4b60440d48550f

@@ -1,0 +1,13 @@
+name: Deploy to Render
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run build
+      - run: echo "Deploying to Render..."
